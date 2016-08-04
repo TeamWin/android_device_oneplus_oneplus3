@@ -5,6 +5,10 @@ on init
     chown system system /dev/ion
     write /proc/touchpanel/double_tap_enable 1
 
+/* Set common model number */
+    property_set("ro.product.model", "Oneplus3");
+    property_set("ro.build.product", "Oneplus3");
+
 # separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
     oneshot

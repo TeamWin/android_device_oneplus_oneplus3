@@ -79,3 +79,4 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
 TW_DEFAULT_BRIGHTNESS := 80
+TW_INCLUDE_NTFS_3G := true
