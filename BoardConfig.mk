@@ -36,6 +36,10 @@ TARGET_KERNEL_DEVICE_DEFCONFIG := device_oneplus3
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image.gz-dtb
 
+ifneq ($(USE_F2FS_BACKPORT),)
+TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image.gz-dtb-f2fs-backport
+endif
+
 # Boot image
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff enforcing=0
 BOARD_KERNEL_BASE := 0x80000000

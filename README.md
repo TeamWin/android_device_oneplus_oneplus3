@@ -19,4 +19,6 @@ lunch omni_oneplus3-eng
 make -j5 recoveryimage
 ```
 
+If you want to use the f2fs backport kernel, use `make -j5 USE_F2FS_BACKPORT=1 recoveryimage` instead.  
+
 Kernel sources are available at: https://github.com/jcadduono/android_kernel_oneplus_msm8996/tree/3-twrp-6.0
