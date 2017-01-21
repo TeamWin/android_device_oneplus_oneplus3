@@ -2,7 +2,7 @@
 /recovery	emmc	/dev/block/bootdevice/by-name/recovery	flags=backup=1
 /system		ext4	/dev/block/bootdevice/by-name/system
 /system_image	emmc	/dev/block/bootdevice/by-name/system
-/data		f2fs	/dev/block/bootdevice/by-name/userdata	flags=encryptable=footer;length=-16384
+/data		f2fs	/dev/block/bootdevice/by-name/userdata	flags=encryptable=footer;length=-16384;fsflags=noatime,nodiratime
 /cache		ext4	/dev/block/bootdevice/by-name/cache
 /usb-otg	vfat	/dev/block/sdg1 /dev/block/sdg		flags=display="USB OTG";storage;wipeingui;removable
 

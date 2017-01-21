@@ -11,6 +11,9 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
+# Set by init module based on ro.boot.rf_version argument from bootloader
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.device ro.product.model
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MODEL := OnePlus3

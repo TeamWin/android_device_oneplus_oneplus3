@@ -1,4 +1,4 @@
-## TWRP device tree for OnePlus 3 (oneplus3)
+## TWRP device tree for OnePlus 3 and OnePlus 3T (oneplus3/oneplus3t)
 
 Add to `.repo/local_manifests/oneplus3.xml`:
 
@@ -19,4 +19,4 @@ lunch omni_oneplus3-eng
 make -j5 recoveryimage
 ```
 
-Kernel sources are available at: https://github.com/jcadduono/android_kernel_oneplus_msm8996/tree/3-twrp-6.0
+Kernel sources are available at: https://github.com/jcadduono/android_kernel_oneplus_msm8996/tree/twrp-7.0
