@@ -5,6 +5,7 @@ on boot
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    export ANDROID_ROOT /system_root
 
 on enable-low-power
     # Disable thermal hotplug to switch governor
